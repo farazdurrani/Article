@@ -1,0 +1,80 @@
+/*
+ * Rules sets may be created using 3 types of selectors:
+ *	1. type = element type (body, div, span, h1, etc.)
+ *	2. id = id attribute --> starts with # (#divOne)
+ *	3. class = class attribute --> starts with . (.allDivs)
+ */
+
+/*
+ * Rule Sets - May contain 1+ rules
+ * 
+ * selector {
+ * 	  ruleName: value;
+ * }
+ */
+
+/* Type Selector */
+body {
+	color: red;
+	/* Change font type: font-family */
+	font-family: calibri, arial, sans-serif; /* default = serif */
+}
+
+body{
+	color: blue !important;
+	width: 750px;
+}
+
+div{
+	color: black;
+	font-family: cursive;
+}
+
+span{
+	color: red;
+	font-family: fantasy;
+}
+
+header{
+	text-align: left; /* this is default */
+}
+
+footer{
+	text-align: center;
+}
+
+nav{
+	text-align: right;
+}
+
+aside{
+	text-align: justify;
+}
+
+/* Create a custom font */
+@font-face{
+	font-family: snowtop;
+	src: url(../fonts/SnowtopCaps.otf);
+}
+
+/* ID Selector */
+#firstId{
+	font-family: snowtop, arial;	
+}
+
+#secondId{
+	font-family: arial;
+	/* Change weight of font: font-weight */
+	font-weight: 900; /* 100 - 900, on the hundred */
+	text-transform: capitalize;
+	text-decoration: underline;/* underline overline line-through none*/
+	font-variant: small-caps;
+}
+
+/* Class Selector */
+.firstClass{
+	/* Transform text: text-transform */
+	text-transform: uppercase;
+	text-decoration: underline overline line-through;
+}
+	
